@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>649439731784-t0282l3ra216nmmo04acatqc82qd8d5l.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.649439731784-t0282l3ra216nmmo04acatqc82qd8d5l</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBUPDhdiD8IJM-x4LKeotN6es5AU8_idkw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>649439731784</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.traveler.traveler</string>
+	<key>PROJECT_ID</key>
+	<string>traveler-e8541</string>
+	<key>STORAGE_BUCKET</key>
+	<string>traveler-e8541.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:649439731784:ios:8a820b9d8f5e88a92ef87d</string>
+</dict>
+</plist>
