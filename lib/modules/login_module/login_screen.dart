@@ -2,7 +2,7 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:traveler/layout/traveler_cubit/traveler_layout.dart';
+import 'package:traveler/layout/traveler_layout.dart';
 import 'package:traveler/modules/login_module/login_cubit/cubit.dart';
 import 'package:traveler/modules/login_module/login_cubit/state.dart';
 import 'package:traveler/modules/register_module/register_screen.dart';

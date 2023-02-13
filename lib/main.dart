@@ -1,9 +1,12 @@
 import 'package:bloc/bloc.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:traveler/bloc_observer.dart';
 import 'package:traveler/firebase_options.dart';
-import 'package:traveler/layout/traveler_cubit/traveler_layout.dart';
+import 'package:traveler/layout/traveler_layout.dart';
+import 'package:traveler/layout/traveler_cubit/cubit.dart';
+import 'package:traveler/layout/traveler_cubit/state.dart';
 import 'package:traveler/modules/login_module/login_screen.dart';
 import 'package:traveler/shared/components/constants.dart';
 import 'package:traveler/shared/network/local/cache_helper.dart';
@@ -15,7 +18,7 @@ Future<void> main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   BlocOverrides.runZoned(
-        () async {
+    () async {
       await CacheHelper.init();
 
       Widget widget;
@@ -34,9 +37,7 @@ Future<void> main() async {
   );
 }
 
-
 class MyApp extends StatelessWidget {
-
   final Widget? startWidget;
 
   MyApp({
@@ -45,11 +46,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: lightTheme,
-      darkTheme: darkTheme,
-      home: startWidget,
+    return MultiBlocProvider(
+      providers: [
+        BlocProvider(
+          create: (context) => TravelerCubit(),
+        ),
+      ],
+      child: BlocConsumer<TravelerCubit, TravelerState>(
+        listener: (context, state){},
+        builder: (context, state){
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            theme: lightTheme,
+            darkTheme: darkTheme,
+            home: startWidget,
+          );
+        },
+      ),
     );
   }
 }

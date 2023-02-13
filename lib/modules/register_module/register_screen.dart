@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:traveler/layout/traveler_cubit/traveler_layout.dart';
+import 'package:traveler/layout/traveler_layout.dart';
 import 'package:traveler/modules/login_module/login_screen.dart';
 import 'package:traveler/modules/register_module/register_cubit/cubit.dart';
 import 'package:traveler/modules/register_module/register_cubit/state.dart';
