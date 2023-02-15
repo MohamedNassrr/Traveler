@@ -20,31 +20,31 @@ class HomeScreen extends StatelessWidget {
          Column(
            crossAxisAlignment: CrossAxisAlignment.start,
            children: [
-             Row(
-               children: [
-                 TextButton(
-                   onPressed: (){},
-                   child: Text(
-                     'Recommended',
-                     style: TextStyle(
-                       color: Colors.black,
-                     ),
-                   ),
-                 ),
-                 const SizedBox(
-                   width: 15.0,
-                 ),
-                 TextButton(
-                   onPressed: (){},
-                   child: Text(
-                     'The Nearest',
-                     style: TextStyle(
-                       color: Colors.black,
-                     ),
-                   ),
-                 ),
-               ],
-             ),
+             // Row(
+             //   children: [
+             //     TextButton(
+             //       onPressed: (){},
+             //       child: Text(
+             //         'Recommended',
+             //         style: TextStyle(
+             //           color: Colors.black,
+             //         ),
+             //       ),
+             //     ),
+             //     const SizedBox(
+             //       width: 15.0,
+             //     ),
+             //     TextButton(
+             //       onPressed: (){},
+             //       child: Text(
+             //         'The Nearest',
+             //         style: TextStyle(
+             //           color: Colors.black,
+             //         ),
+             //       ),
+             //     ),
+             //   ],
+             // ),
              InkWell(
                onTap: (){},
                child: Stack(
@@ -155,7 +155,122 @@ class HomeScreen extends StatelessWidget {
                  ],
                ),
              ),
-           ],
+             const SizedBox(
+               height: 80.0,
+             ),
+             Text(
+               'Explore more',
+               style: Theme.of(context).textTheme.headline5,
+             ),
+             const SizedBox(
+               height: 20.0,
+             ),
+              Row(
+                children: [
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 80.0,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.blue[200],
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.beach_access,
+                            ),
+                          ),
+                        ),
+                        const Text(
+                            'Beach',
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15.0,
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 80.0,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.red[200],
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.color_lens,
+                            ),
+                          ),
+                        ),
+                        const Text(
+                          'Cultural'
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15.0,
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 80.0,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.greenAccent[200],
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.castle,
+                            ),
+                          ),
+                        ),
+                        const Text(
+                          'Religious'
+                        )
+                      ],
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 15.0,
+                  ),
+                  Expanded(
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 80.0,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: Colors.green[200],
+                            borderRadius: BorderRadius.all(Radius.circular(15.0)),
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(
+                              Icons.forest,
+                            ),
+                          ),
+                        ),
+                        const Text(
+                          'Mountain'
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ],
          ),
         ],
       ),
